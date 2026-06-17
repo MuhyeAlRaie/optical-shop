@@ -10,7 +10,7 @@
       "currency": "USD",
       "thumbnail": "assets/images/sg-001.svg",
       "preview": "assets/images/sg-001.svg",
-      "model": "aviator",
+      "model": "assets/models/aviator.glb",
       "modelColor": "#c9a14a",
       "lensColor": "#2a2a35",
       "description": "Timeless teardrop aviator silhouette with a polished gold frame and gradient smoke lenses. A versatile icon that suits oval, square, and heart-shaped faces alike.",
