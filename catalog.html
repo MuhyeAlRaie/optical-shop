@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbfaf8" />
+  <title>Catalog — Lumea Optical Atelier</title>
+  <meta name="description" content="Browse premium sunglasses and prescription glasses. Filter by category, gender and brand, then try any frame on in your browser." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        <span class="nav__brand-text">Lumea<small>Optical Atelier</small></span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="catalog.html?category=sunglasses">Sunglasses</a>
+        <a href="catalog.html?category=prescription">Prescription</a>
+        <a href="tryon.html">Virtual Try-On</a>
+      </nav>
+      <a class="btn btn--primary btn--sm nav__cta" href="tryon.html">Try Now</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div style="margin-bottom: var(--sp-5); text-align:center;">
+        <div class="section__eyebrow">Eyewear collection</div>
+        <h1>Find the frame that frames you.</h1>
+        <p class="section__sub" style="margin: var(--sp-3) auto 0;">Filter, search, then try any pair on in seconds.</p>
+      </div>
+
+      <div class="catalog-head">
+        <div class="search-bar" style="max-width: 480px; flex: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" id="searchInput" placeholder="Search by name, brand, style…" autocomplete="off" />
+        </div>
+        <div style="display:flex; gap: var(--sp-2); align-items:center;">
+          <button class="btn btn--ghost btn--sm filters-toggle" id="filtersToggle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+            Filters
+          </button>
+          <select class="catalog-head__sort" id="sortSelect">
+            <option value="">Sort: Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+            <option value="name">Name: A → Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="catalog-layout">
+        <aside class="filters" id="filtersPanel" aria-label="Filters">
+          <div class="filters__group">
+            <p class="filters__title">Category</p>
+            <label class="filter-option"><input type="checkbox" name="category" value="sunglasses" /> Sunglasses</label>
+            <label class="filter-option"><input type="checkbox" name="category" value="prescription" /> Prescription</label>
+          </div>
+          <div class="filters__group">
+            <p class="filters__title">For</p>
+            <label class="filter-option"><input type="checkbox" name="gender" value="men" /> Men</label>
+            <label class="filter-option"><input type="checkbox" name="gender" value="women" /> Women</label>
+            <label class="filter-option"><input type="checkbox" name="gender" value="unisex" /> Unisex</label>
+          </div>
+          <div class="filters__group">
+            <p class="filters__title">Brand</p>
+            <div id="brandFilters"></div>
+          </div>
+          <button class="btn btn--ghost btn--sm filters__clear" id="clearFilters">Clear all</button>
+        </aside>
+
+        <section>
+          <div class="catalog-head__count" id="resultCount">Loading…</div>
+          <div class="grid grid--3" id="productGrid"></div>
+          <div id="emptyState" class="hidden" style="text-align:center; padding: var(--sp-7) 0; color: var(--color-muted);">
+            <h3>No frames match your filters</h3>
+            <p>Try removing a filter or clearing your search.</p>
+            <button class="btn btn--ghost btn--sm" id="emptyClear">Clear all filters</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Lumea<small>Optical Atelier</small></div>
+          <p style="color:#9a9a9a; font-size:0.88rem; max-width:280px;">Premium eyewear for the modern wearer.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="catalog.html?category=sunglasses">Sunglasses</a></li>
+            <li><a href="catalog.html?category=prescription">Prescription</a></li>
+            <li><a href="catalog.html">All frames</a></li>
+            <li><a href="tryon.html">Virtual try-on</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Technology</h4>
+          <ul>
+            <li><a href="tryon.html">How try-on works</a></li>
+            <li><a href="#">MediaPipe tracking</a></li>
+            <li><a href="#">A-Frame renderer</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Size guide</a></li>
+            <li><a href="#">Shipping & returns</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Lumea Optical Atelier. A frontend prototype.</span>
+        <span>100% client-side · No tracking · No uploads</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/catalog.js"></script>
+</body>
+</html>

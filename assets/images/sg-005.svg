@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f5f2"/>
+      <stop offset="1" stop-color="#eae5df"/>
+    </linearGradient>
+    <linearGradient id="lensGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(26,58,74,0.85)"/>
+      <stop offset="1" stop-color="rgba(26,58,74,0.55)"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0.35" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="6"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgGrad)"/>
+  <g filter="url(#softShadow)">
+    
+<path d="M 110 150 Q 110 125 145 120 L 455 120 Q 490 125 490 150 L 490 195 Q 488 220 455 222 L 145 222 Q 112 220 110 195 Z"
+      fill="url(#lensGrad)" stroke="rgb(10,13,15)" stroke-width="6"/>
+<path d="M 300 122 L 300 220" stroke="rgb(10,13,15)" stroke-width="4" opacity="0.55"/>
+<line x1="110" y1="160" x2="70" y2="145" stroke="rgb(10,13,15)" stroke-width="5" stroke-linecap="round"/>
+<line x1="490" y1="160" x2="530" y2="145" stroke="rgb(10,13,15)" stroke-width="5" stroke-linecap="round"/>
+
+  </g>
+  <ellipse cx="220" cy="170" rx="35" ry="20" fill="url(#shine)" opacity="0.7"/>
+  <ellipse cx="400" cy="170" rx="35" ry="20" fill="url(#shine)" opacity="0.7"/>
+  <text x="30" y="40" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#1c1c1c">Sport Wrap Carbon</text>
+  <text x="30" y="60" font-family="Inter, Arial, sans-serif" font-size="12" fill="#666">VELOCE</text>
+</svg>

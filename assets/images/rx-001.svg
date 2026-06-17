@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7f5f2"/>
+      <stop offset="1" stop-color="#eae5df"/>
+    </linearGradient>
+    <linearGradient id="lensGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="rgba(220,235,245,0.45)"/>
+      <stop offset="1" stop-color="rgba(200,225,240,0.20)"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0.35" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="6"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="360" fill="url(#bgGrad)"/>
+  <g filter="url(#softShadow)">
+    
+<circle cx="210" cy="175" r="62" fill="url(#lensGrad)" stroke="rgb(140,140,140)" stroke-width="6"/>
+<circle cx="390" cy="175" r="62" fill="url(#lensGrad)" stroke="rgb(140,140,140)" stroke-width="6"/>
+<line x1="272" y1="175" x2="328" y2="175" stroke="rgb(140,140,140)" stroke-width="6" stroke-linecap="round"/>
+<line x1="148" y1="170" x2="85" y2="150" stroke="rgb(140,140,140)" stroke-width="5" stroke-linecap="round"/>
+<line x1="452" y1="170" x2="515" y2="150" stroke="rgb(140,140,140)" stroke-width="5" stroke-linecap="round"/>
+
+  </g>
+  <ellipse cx="220" cy="170" rx="35" ry="20" fill="url(#shine)" opacity="0.7"/>
+  <ellipse cx="400" cy="170" rx="35" ry="20" fill="url(#shine)" opacity="0.7"/>
+  <text x="30" y="40" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#1c1c1c">Crystal Clear Round</text>
+  <text x="30" y="60" font-family="Inter, Arial, sans-serif" font-size="12" fill="#666">HERITAGE</text>
+</svg>

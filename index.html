@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#fbfaf8" />
+  <title>Lumea — Modern Optical Shop | Virtual Eyewear Try-On</title>
+  <meta name="description" content="Premium sunglasses and prescription eyewear. Try on every frame in your browser with augmented reality — no app, no upload to the cloud." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav__brand" href="index.html">
+        <span class="nav__brand-mark" aria-hidden="true"></span>
+        <span class="nav__brand-text">
+          Lumea
+          <small>Optical Atelier</small>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="catalog.html?category=sunglasses">Sunglasses</a>
+        <a href="catalog.html?category=prescription">Prescription</a>
+        <a href="tryon.html">Virtual Try-On</a>
+      </nav>
+
+      <a class="btn btn--primary btn--sm nav__cta" href="tryon.html">
+        Try Now
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <span class="hero__eyebrow">
+              <span style="width:6px;height:6px;border-radius:50%;background:var(--color-accent);"></span>
+              Augmented-reality try-on in your browser
+            </span>
+            <h1 class="hero__title">See yourself in every frame, instantly.</h1>
+            <p class="hero__lead">
+              Lumea is a premium optical atelier reimagined for the web. Browse curated sunglasses
+              and prescription eyewear, then try them on live — right in your browser — with
+              millimetre-accurate facial tracking. No app. No upload. No compromise.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="tryon.html">
+                Start Virtual Try-On
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn--ghost btn--lg" href="catalog.html">Browse catalog</a>
+            </div>
+            <div class="hero__stats">
+              <div>
+                <div class="hero__stat-num">12+</div>
+                <div class="hero__stat-label">Curated frames</div>
+              </div>
+              <div>
+                <div class="hero__stat-num">478</div>
+                <div class="hero__stat-label">Face landmarks tracked</div>
+              </div>
+              <div>
+                <div class="hero__stat-num">100%</div>
+                <div class="hero__stat-label">Browser-based, no app</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <svg viewBox="0 0 600 360" width="600" height="360" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="hl" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="rgba(255,255,255,0.6)"/>
+                  <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+                </linearGradient>
+              </defs>
+              <rect x="130" y="120" width="135" height="95" rx="22" fill="rgba(30,30,40,0.85)" stroke="#1c1c1c" stroke-width="6"/>
+              <rect x="335" y="120" width="135" height="95" rx="22" fill="rgba(30,30,40,0.85)" stroke="#1c1c1c" stroke-width="6"/>
+              <line x1="265" y1="142" x2="335" y2="142" stroke="#1c1c1c" stroke-width="6" stroke-linecap="round"/>
+              <line x1="130" y1="142" x2="70" y2="125" stroke="#1c1c1c" stroke-width="5" stroke-linecap="round"/>
+              <line x1="470" y1="142" x2="530" y2="125" stroke="#1c1c1c" stroke-width="5" stroke-linecap="round"/>
+              <ellipse cx="190" cy="160" rx="32" ry="18" fill="url(#hl)" opacity="0.8"/>
+              <ellipse cx="395" cy="160" rx="32" ry="18" fill="url(#hl)" opacity="0.8"/>
+            </svg>
+            <div class="hero__visual-tag">
+              <span>Aviator Classic Gold</span>
+              <small>Tap to try in AR</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Categories ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__eyebrow">Shop by category</div>
+          <h2>Find your perfect pair</h2>
+          <p class="section__sub">From timeless aviators to featherweight titanium frames — every pair is crafted to last and tuned to your face.</p>
+        </div>
+        <div class="grid grid--3" id="categoriesGrid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Featured Sunglasses ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__eyebrow">Best sellers</div>
+          <h2>Featured sunglasses</h2>
+          <p class="section__sub">Hand-finished frames with 100% UV400 protection and polarised optical-grade lenses.</p>
+        </div>
+        <div class="grid grid--4" id="featuredSunglasses"></div>
+        <div class="text-center" style="margin-top:32px;">
+          <a class="btn btn--ghost btn--lg" href="catalog.html?category=sunglasses">View all sunglasses</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Featured Prescription ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__eyebrow">Optical clarity</div>
+          <h2>Featured prescription glasses</h2>
+          <p class="section__sub">Single-vision, progressive and reading frames in titanium, acetate and TR90 — ready for your prescription.</p>
+        </div>
+        <div class="grid grid--4" id="featuredPrescription"></div>
+        <div class="text-center" style="margin-top:32px;">
+          <a class="btn btn--ghost btn--lg" href="catalog.html?category=prescription">View all prescription</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <div class="section__eyebrow">Three simple steps</div>
+          <h2>How virtual try-on works</h2>
+          <p class="section__sub">Our MediaPipe-powered face tracker maps 478 landmarks in real time and places each frame precisely on your face.</p>
+        </div>
+        <div class="grid grid--3">
+          <div class="feature">
+            <div class="feature__num">1</div>
+            <h3 class="feature__title">Pick a frame</h3>
+            <p class="feature__desc">Browse the catalog and choose any pair. Each model is rendered in 3D with physically-based materials.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">2</div>
+            <h3 class="feature__title">Open your camera</h3>
+            <p class="feature__desc">Allow camera access (or upload a photo). Our tracker detects eyes, nose bridge and head orientation.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__num">3</div>
+            <h3 class="feature__title">Try, adjust, capture</h3>
+            <p class="feature__desc">Fine-tune fit with zoom & rotation controls, then download a PNG of your favourite look.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA banner ===== -->
+    <section class="section">
+      <div class="container">
+        <div style="background:linear-gradient(135deg, var(--color-ink) 0%, #2a2a2a 100%); color:#fff; padding: var(--sp-7); border-radius: var(--r-xl); text-align:center; position:relative; overflow:hidden;">
+          <div style="position:absolute; inset:0; background:radial-gradient(circle at 30% 20%, rgba(184,137,63,0.25), transparent 60%); pointer-events:none;"></div>
+          <div style="position:relative;">
+            <h2 style="color:#fff;">Ready to find your next frame?</h2>
+            <p style="color:#cfcfcf; max-width:560px; margin:0 auto var(--sp-5);">Open the virtual mirror and see how each pair looks on your face — in real time, on any device.</p>
+            <a class="btn btn--primary btn--lg" href="tryon.html">Launch Virtual Try-On</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Lumea<small>Optical Atelier</small></div>
+          <p style="color:#9a9a9a; font-size:0.88rem; max-width:280px;">Premium eyewear for the modern wearer. Crafted in acetate, titanium and TR90. Try every frame in AR before you buy.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="catalog.html?category=sunglasses">Sunglasses</a></li>
+            <li><a href="catalog.html?category=prescription">Prescription</a></li>
+            <li><a href="catalog.html">All frames</a></li>
+            <li><a href="tryon.html">Virtual try-on</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Technology</h4>
+          <ul>
+            <li><a href="tryon.html">How try-on works</a></li>
+            <li><a href="#">MediaPipe tracking</a></li>
+            <li><a href="#">A-Frame renderer</a></li>
+            <li><a href="#">Privacy & data</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Size guide</a></li>
+            <li><a href="#">Shipping & returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Lumea Optical Atelier. A frontend prototype.</span>
+        <span>100% client-side · No tracking · No uploads</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
